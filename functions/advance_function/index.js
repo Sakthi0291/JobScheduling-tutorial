@@ -16,7 +16,7 @@ app.post('/insertReminder', async (req, res) => {
          console.log(currentUser); 
           const datastores = catalystApp.datastore();
 		  
-const table = datastores.table('26818000000206002'); // Your Table ID
+const table = datastores.table('26818000000206001'); // Your Table ID
 console.log("222");
 await insertReminder(req.body, table, catalystApp);
 console.log("333");
