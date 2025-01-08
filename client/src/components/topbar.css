@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.topbarContainer{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(58, 58, 98);
+    display: flex; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+   
+}
+
+.topbarLeft{
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    gap: 22%;
+    padding-left: 29px;
+}
+
+.naviagtion-btn{
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.topLogo{
+    font-size: 24px;
+    margin-left: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.topBarCenter{
+    flex: 1 1;
+    color: white;
+    padding-left: 8%;
+}
+
+
+
+.topbarRight{
+    flex: 0 1;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 24%;
+}
+
+.topRight-btn{
+    width: 74px;
+    height: 31px;
+    font-size: 15px;
+    font-weight: 650;
+    background-color: red;
+    color: white;
+    margin-right: 40px;
+    border: none;
+    border-radius: 7px;
+}
+
+
+.topbarlink{
+    display: flex;
+    margin-left: 67px;
+    color: white;
+}
+
+
+
