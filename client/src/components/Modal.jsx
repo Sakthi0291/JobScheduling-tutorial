@@ -12,12 +12,20 @@ function Modal({ editData, onUpdate, onClose }) {
     const handleSubmit = () => {
       onUpdate(formData);
     };
+
+    const today = new Date().toISOString().split("T")[0];
   
     return (
       <div className="modal">
         <div className="modal-content">
-          <button onClick={onClose}>&times;</button>
-          <h2 className="modal-header">Edit User</h2>
+         <div className="edit-header">
+            <div className="modal-header">
+            <h2>Edit User</h2>
+            </div>
+            <div className="modal-close">
+              <button onClick={onClose}>&times;</button>
+            </div>
+         </div>
         <div className="modal-input-group">
           <input
             name="Name"
@@ -37,14 +45,15 @@ function Modal({ editData, onUpdate, onClose }) {
         </div>
 
         <div className="modal-input-group">
-          <input
-            name="BirthDay"
-            type="date"
-            value={formData.BirthDay}
-            onChange={handleChange}
-            className="modal-input"
-          />
-        </div>
+             <input
+               name="BirthDay"
+               type="date"
+               value={formData.BirthDay}
+               onChange={handleChange}
+               className="modal-input"
+               max={today} // Set max date to today
+               />
+        </div>      
         <div className="modal-input-group">
           <input
             name="Email"
