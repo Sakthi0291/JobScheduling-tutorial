@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import UserList from "./components/UserList";
-import Modal from "./components/Modal";
-import TopBar from "./components/TopBar";
+import UserList from "./UserList";
+import Modal from "./Modal";
+import TopBar from "./TopBar";
 
 function ListUsers() {
   const [users, setUsers] = useState([]);
